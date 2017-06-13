@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link type="text/css" rel="stylesheet" href="assets/stylesheets/jeopardy_game_hard.css" />
+  <title>Jeopardy_Game_Hard</title>
+</head>
+
+<body>
+  <div id="header">
+    <h1>Jeopardy Game</h1>
+  </div>
+
+  <div>
+    <p>
+      Click on anyone of the below <strong>Categories</strong> to display the question...
+    </p>
+    <button class="category" data-questionnum="0" id="category1"></button>
+    <button class="category" data-questionnum="1" id="category2"></button>
+    <button class="category" data-questionnum="2" id="category3"></button>
+  </div>
+
+  <div class="quesSection">
+    <div id="div_category">
+      <strong>The Category You Are In:</strong><span id="category"></span><br>
+    </div>
+    <div id="div_question">
+      <strong>Question:</strong><span id="question"></span><br>
+    </div>
+
+    <div id="div_points">
+      <strong>Question Points:</strong><span id="points"></span><br>
+    </div>
+
+    <div>
+      <input type="text" id="input" placeholder="Type In Answer"><br />
+    </div>
+    <div>
+      <button id="submit">GUESS</button>
+    </div>
+
+    <div id="div_answer">
+      <strong>Entered Answer:</strong><span id="entanswer"></span><br />
+      <strong>Correct Answer:</strong><span id="coranswer"></span>
+    </div>
+    <div id="div_msg">
+      <span id="message"></span>
+    </div>
+    <div id="div_score">
+      <strong>Player Total Points: </strong><span id="total_points">0</span><br>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="assets/javascript/jeopardy_game_hard.js"></script>
+  <script type="text/javascript"></script>
+</body>
+
+</html>
